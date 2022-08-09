@@ -4,7 +4,7 @@ description: this is to validate reusable workflows
 on: [push]
 
 jobs:
-  Workflow_1_validation_job
+  Workflow_1_validation_job:
     runs-on: ubuntu-latest
     steps:
       - uses: workflows/workflow-1.yml
