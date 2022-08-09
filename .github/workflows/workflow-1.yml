@@ -14,6 +14,6 @@ jobs:
     runs-on: ubuntu-latest
     name: action 1 validation job
     steps:
-      - uses: ./actions
+      - uses: actions/action-1@main
         with:
           who-to-greet: ${{ inputs.who-to-greet }}
