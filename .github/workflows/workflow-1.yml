@@ -1,0 +1,19 @@
+name: RAC Azure Terraform Plan & Apply Workflow for GitHub & Azure components
+
+on:
+  workflow_call:
+    inputs:
+      who-to-greet:  # id of input
+        description: 'Who to greet'
+        required: true
+        default: 'World'
+
+
+jobs:
+  action_1_validation_job:
+    runs-on: ubuntu-latest
+    name: action 1 validation job
+    steps:
+      - uses: actions/action-1
+        with:
+          who-to-greet: ${{ inputs.who-to-greet }}

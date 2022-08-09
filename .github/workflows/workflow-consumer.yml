@@ -1,0 +1,11 @@
+name: workflow consumer
+description: this is to validate reusable workflows
+
+on: [push]
+
+jobs:
+  runs-on: ubuntu-latest
+  steps:
+    - uses: workflows/workflow-1.yml
+      with:
+        who-to-greet: "Prateek Thalluri"
