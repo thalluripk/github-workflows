@@ -1,5 +1,4 @@
 name: workflow consumer
-description: this is to validate reusable workflows
 
 on: [push]
 
