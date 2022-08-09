@@ -7,6 +7,6 @@ jobs:
   Workflow_1_validation_job:
     runs-on: ubuntu-latest
     steps:
-      - uses: workflow-1.yml
+      - uses: ./workflows/workflow-1.yml
         with:
           who-to-greet: "Prateek Thalluri"
