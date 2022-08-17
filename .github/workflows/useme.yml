@@ -16,5 +16,5 @@ jobs:
         uses: thalluripk/github-actions/branch-policy@main
         with:
           who-to-greet: ${{inputs.user}}
-      - run: echo random-number ${{ steps.foo.outputs.random-number }}
-        shell: bash
+      - run: write-output "random-number ${{ steps.foo.outputs.random-number }}"
+        shell: pwsh
