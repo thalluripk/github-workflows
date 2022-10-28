@@ -21,7 +21,7 @@ on:
           - "RAC WA"
           - "Toyota Financials"
 jobs:
-  process-package: # This job is run manually
+  process-package: # This job is run manually sdf
     runs-on: ubuntu-latest
     steps:
       - name: "PowerShell Script"
