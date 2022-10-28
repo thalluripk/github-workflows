@@ -1,0 +1,30 @@
+name: "Nuget Packager: Add Release Package"
+
+on:
+  workflow_dispatch:
+    inputs:
+      package-name:
+        description: Name of package
+        required: true
+      package-version:
+        description: your package version, e.g. 1.0.0
+        required: true
+      pre-release:
+        description: build pre-release version
+        required: true
+        type: boolean
+      organisation:
+        description: "org description"
+        required: true
+        type: choice
+        options:
+          - "RAC WA"
+          - "Toyota Financials"
+jobs:
+  process-package: # This job is run manually
+    runs-on: ubuntu-latest
+    steps:
+      - name: "PowerShell Script"
+        id: "powershell-script"
+        run: |
+          echo "This is from the script"
